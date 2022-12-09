@@ -40,7 +40,7 @@ RUN conda activate ${CONDA_ENV} && \
 # Gitpod will load the repository into /workspace/pandas. We remove the
 # directory from the image to prevent conflicts
 RUN rm -rf ${WORKSPACE}
-
+ENV FOO=BAR
 # -----------------------------------------------------------------------------
 # Always return to non privileged user
 USER gitpod
